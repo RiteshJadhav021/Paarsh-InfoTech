@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Form</title>
+</head>
+<style>
+    .form_container{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+      form {
+            background: #ffffff;
+            padding: 25px 30px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+          label {
+            font-weight: bold;
+            display: inline;
+            margin-bottom: 5px;
+            color: #555;
+        }
+         button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+</style>
+<body>
+     <h2 style="text-align: center;">HTML FORM</h2>
+    <div class="form_container">
+        <form action="">
+            <label for="">Name :</label>
+            <input type="text" placeholder="Enter Your Name"> <br><br>
+            <label for="">Password :</label>
+            <input type="password" placeholder="Enter the Password"><br><br>
+            <label for="">Email :</label>
+            <input type="text" placeholder="Enter Your Email"><br><br>
+            <label for="id">Male</label>
+
+            <input type="radio" value="Male" name="id">
+            <label for="id">Female</label>
+            <input type="radio" value="Female" name="id"> <br><br>
+
+            <label for="course">Choose your course :</label>
+            <select name="" id="xyz">
+                <option value="BE">BE</option>
+                <option value="BTech">BTech</option>
+                <option value="BBA">BBA</option>
+            </select> <br><br>
+            <label for="">Give us your Feedback :</label> <br><br>
+            <textarea name="" id="" rows="5" placeholder="Feedback"></textarea> <br><br>
+            <button type="submit" >submit</button>
+        </form>
+    </div>
+</body>
+</html>
