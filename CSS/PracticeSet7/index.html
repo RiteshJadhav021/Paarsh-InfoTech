@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Colors</title>
+
+    <style>
+        /* Base style */
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: blue; /* default: above 600px */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Less than 300px */
+        @media (max-width: 299px) {
+            .box {
+                background-color: green;
+            }
+        }
+
+        /* Between 300px and 400px */
+        @media (min-width: 300px) and (max-width: 399px) {
+            .box {
+                background-color: pink;
+            }
+        }
+
+        /* Between 400px and 600px */
+        @media (min-width: 400px) and (max-width: 600px) {
+            .box {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        Resize Screen
+    </div>
+
+</body>
+</html>
