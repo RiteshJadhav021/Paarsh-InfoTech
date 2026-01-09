@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+/* Step 1: Circular div with thick border from one side */
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #444;
+    border-top: 8px solid #00d9ff; /* thick border from top */
+    border-radius: 50%;
+}
+
+/* Step 2: Create spinning animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Step 3: Apply animation infinitely */
+.loader {
+    animation: spin 1s linear infinite;
+}
